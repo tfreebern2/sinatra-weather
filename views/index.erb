@@ -3,7 +3,20 @@
     <link href="/style.css" rel="stylesheet" />
   </head>
   <body>
-    <h2>The weather right now in San Francisco</h2>
-    <h1><%= @temp %>&deg;</h1>
+    <main>
+      <h2>The weather right now in San Francisco</h2>
+      <h1><%= @temp %>&deg;</h1>
+    </main>
+    <footer>
+      <ul>
+        <% @cities.each do |city| %>
+          <li><a href="/?city=<%= URI.escape(city) %>"><%= city %></a></li>
+        <% end %>
+      </ul>
+      <p>
+        Built with hardwork and dedication to the craft of software development
+        by <a href="https://github.com/tfreebern2">Tim Freebern</a>
+      </p>
+    </footer>
   </body>
 </html>
