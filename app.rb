@@ -1,7 +1,7 @@
 require 'sinatra'
 
-set :port, 3000
+set :port, 4949
 
 get '/' do
-  'Hello World!'
+  erb :index
 end
