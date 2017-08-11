@@ -13,10 +13,13 @@ set :port, 3000
 get '/' do
   @cities = [
     "San Francisco",
+    "New York",
     "London",
     "Tokyo",
     "Moscow",
-    "Cairo"
+    "Cairo",
+    "Orlando",
+    "Miami"
   ]
 
   @city = params[:city] || "San Francisco"

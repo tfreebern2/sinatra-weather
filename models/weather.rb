@@ -23,7 +23,7 @@ class Weather
     data = weather_data
     return nil if data.nil? || data['main'].nil? || data['main']['temp'].nil?
 
-    data['main']['temp'] * 9 / 5 - 459.67
+    (data['main']['temp'] * 9 / 5 - 459.67).round(0)
   end
 
   def icons

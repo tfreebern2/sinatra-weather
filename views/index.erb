@@ -4,7 +4,7 @@
   </head>
   <body>
     <main>
-      <h2>The weather right now in San Francisco</h2>
+      <h2>The weather right now in <%= @city %></h2>
       <h1><%= @temp %>&deg;</h1>
       <div>
         <% @icons.each do |icon| %>
@@ -19,10 +19,8 @@
         <% end %>
       </ul>
       <p>
-        Built with hardwork and dedication to the craft of software development
-        <br />
-        by <a href="https://github.com/tfreebern2">Tim Freebern</a>
-        <br />
+        A simple Sinatra API application built
+        by <a href="https://github.com/tfreebern2">Tim Freebern</a> --
         Icons by <a href="flaticon.com">flaticon</a>
       </p>
     </footer>
